@@ -7,8 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var searchBar: UISearchBar!
     
     private var animals = [
         "Cat",
@@ -35,20 +36,29 @@ class ViewController: UIViewController {
         "Giraffe",
     ]
     
+    private var filteredAnimals = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        filteredAnimals = animals
+        
         setupTableView()
+        setupSearchBar()
     }
-    
+
     private func setupTableView() -> Void {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    private func setupSearchBar() -> Void {
+        searchBar.delegate = self
+    }
 }
 
 
-extension ViewController: UITableViewDelegate {
+extension ViewController: UITableViewDelegate { 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
@@ -64,13 +74,27 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animals.count
+        return filteredAnimals.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
-        cell.textLabel?.text = animals[indexPath.item]
+        cell.textLabel?.text = filteredAnimals[indexPath.item]
         
         return cell
+    }
+}
+
+extension ViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("Search Text changed: \(searchText)")
+        
+        if searchText.isEmpty {
+            filteredAnimals = animals
+            tableView.reloadData()
+        } else {
+            filteredAnimals = animals.filter { return $0.localizedCaseInsensitiveContains(searchText) }
+            tableView.reloadData()
+        }
     }
 }
