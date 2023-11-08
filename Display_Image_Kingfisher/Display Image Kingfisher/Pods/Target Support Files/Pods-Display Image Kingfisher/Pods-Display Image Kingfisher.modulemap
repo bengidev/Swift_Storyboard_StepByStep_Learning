@@ -1,0 +1,6 @@
+framework module Pods_Display_Image_Kingfisher {
+  umbrella header "Pods-Display Image Kingfisher-umbrella.h"
+
+  export *
+  module * { export * }
+}

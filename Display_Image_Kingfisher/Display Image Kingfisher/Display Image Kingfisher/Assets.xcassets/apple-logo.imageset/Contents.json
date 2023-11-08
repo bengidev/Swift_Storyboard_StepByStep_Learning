@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "png-apple-logo-9707.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
