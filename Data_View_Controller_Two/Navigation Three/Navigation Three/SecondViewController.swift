@@ -9,18 +9,13 @@ import UIKit
 
 final class SecondViewController: UIViewController {
     var dataFromMainView: String?
-    var callback: (@escaping (String) -> Void)?
+    var callback: ((String) -> Void)?
     
     @IBOutlet private var primaryLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    }
-    
-    override func viewIsAppearing(_ animated: Bool) {
-        super.viewIsAppearing(animated)
-        
         updatePrimaryLabel(with: dataFromMainView)
     }
     
