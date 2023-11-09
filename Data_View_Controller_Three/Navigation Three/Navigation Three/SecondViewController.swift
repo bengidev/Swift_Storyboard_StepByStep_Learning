@@ -9,7 +9,6 @@ import UIKit
 
 final class SecondViewController: UIViewController {
     var dataFromMainView: String?
-    var callback: ((String) -> Void)?
     var delegate: SecondViewControllerDelegate?
     
     @IBOutlet private var primaryLabel: UILabel!
@@ -21,8 +20,7 @@ final class SecondViewController: UIViewController {
     }
     
     @IBAction private func mainViewPressed(_ sender: UIButton) {
-        callback?("This String is from Second View")
-        delegate?.dis
+        delegate?.dismissed("This String is from SecondViewControllerDelegate")
         navigationController?.popViewController(animated: true)
     }
     
