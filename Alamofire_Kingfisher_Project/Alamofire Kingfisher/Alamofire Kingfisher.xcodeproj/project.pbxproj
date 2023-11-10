@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C010FA6BEB504D5AD516AD7 /* Pods_Alamofire_Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCA0E41247046E964FA1032 /* Pods_Alamofire_Kingfisher.framework */; };
+		B60C43342AFEDF13003423BD /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C43332AFEDF13003423BD /* PhotoDetailViewController.swift */; };
+		B60C43362AFEDF1D003423BD /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60C43352AFEDF1D003423BD /* PhotoDetail.storyboard */; };
+		B6BF623B2AFB53570045059B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF623A2AFB53570045059B /* AppDelegate.swift */; };
+		B6BF623D2AFB53570045059B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF623C2AFB53570045059B /* SceneDelegate.swift */; };
+		B6BF623F2AFB53570045059B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF623E2AFB53570045059B /* ViewController.swift */; };
+		B6BF62422AFB53570045059B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF62402AFB53570045059B /* Main.storyboard */; };
+		B6BF62442AFB535A0045059B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BF62432AFB535A0045059B /* Assets.xcassets */; };
+		B6BF62472AFB535A0045059B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF62452AFB535A0045059B /* LaunchScreen.storyboard */; };
+		B6BF62502AFB566B0045059B /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF624E2AFB566B0045059B /* PhotosTableViewCell.swift */; };
+		B6BF62512AFB566B0045059B /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BF624F2AFB566B0045059B /* PhotosTableViewCell.xib */; };
+		B6BF62532AFB5A2F0045059B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF62522AFB5A2F0045059B /* Photo.swift */; };
+		B6BF62552AFB5F6B0045059B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF62542AFB5F6B0045059B /* UIImageViewExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FCA0E41247046E964FA1032 /* Pods_Alamofire_Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B7A862B79D920538B6B780 /* Pods-Alamofire Kingfisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire Kingfisher.debug.xcconfig"; path = "Target Support Files/Pods-Alamofire Kingfisher/Pods-Alamofire Kingfisher.debug.xcconfig"; sourceTree = "<group>"; };
+		B60C43332AFEDF13003423BD /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		B60C43352AFEDF1D003423BD /* PhotoDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoDetail.storyboard; sourceTree = "<group>"; };
+		B6BF62372AFB53570045059B /* Alamofire Kingfisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alamofire Kingfisher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BF623A2AFB53570045059B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6BF623C2AFB53570045059B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B6BF623E2AFB53570045059B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6BF62412AFB53570045059B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6BF62432AFB535A0045059B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6BF62462AFB535A0045059B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6BF62482AFB535A0045059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6BF624E2AFB566B0045059B /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		B6BF624F2AFB566B0045059B /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
+		B6BF62522AFB5A2F0045059B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		B6BF62542AFB5F6B0045059B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		E2D2FD52A296CA584BF195D4 /* Pods-Alamofire Kingfisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire Kingfisher.release.xcconfig"; path = "Target Support Files/Pods-Alamofire Kingfisher/Pods-Alamofire Kingfisher.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6BF62342AFB53570045059B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C010FA6BEB504D5AD516AD7 /* Pods_Alamofire_Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19D6BF0D28E41D5C0A572C42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FCA0E41247046E964FA1032 /* Pods_Alamofire_Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D02172946D95BCF1E4FF969 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85B7A862B79D920538B6B780 /* Pods-Alamofire Kingfisher.debug.xcconfig */,
+				E2D2FD52A296CA584BF195D4 /* Pods-Alamofire Kingfisher.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B60C43302AFEDE5B003423BD /* Photo Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B60C43332AFEDF13003423BD /* PhotoDetailViewController.swift */,
+				B60C43352AFEDF1D003423BD /* PhotoDetail.storyboard */,
+			);
+			path = "Photo Detail";
+			sourceTree = "<group>";
+		};
+		B6BF622E2AFB53570045059B = {
+			isa = PBXGroup;
+			children = (
+				B6BF62392AFB53570045059B /* Alamofire Kingfisher */,
+				B6BF62382AFB53570045059B /* Products */,
+				9D02172946D95BCF1E4FF969 /* Pods */,
+				19D6BF0D28E41D5C0A572C42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6BF62382AFB53570045059B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF62372AFB53570045059B /* Alamofire Kingfisher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6BF62392AFB53570045059B /* Alamofire Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				B60C43302AFEDE5B003423BD /* Photo Detail */,
+				B6BF623A2AFB53570045059B /* AppDelegate.swift */,
+				B6BF623C2AFB53570045059B /* SceneDelegate.swift */,
+				B6BF623E2AFB53570045059B /* ViewController.swift */,
+				B6BF62542AFB5F6B0045059B /* UIImageViewExtension.swift */,
+				B6BF62522AFB5A2F0045059B /* Photo.swift */,
+				B6BF624E2AFB566B0045059B /* PhotosTableViewCell.swift */,
+				B6BF624F2AFB566B0045059B /* PhotosTableViewCell.xib */,
+				B6BF62402AFB53570045059B /* Main.storyboard */,
+				B6BF62452AFB535A0045059B /* LaunchScreen.storyboard */,
+				B6BF62432AFB535A0045059B /* Assets.xcassets */,
+				B6BF62482AFB535A0045059B /* Info.plist */,
+			);
+			path = "Alamofire Kingfisher";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6BF62362AFB53570045059B /* Alamofire Kingfisher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6BF624B2AFB535A0045059B /* Build configuration list for PBXNativeTarget "Alamofire Kingfisher" */;
+			buildPhases = (
+				09551F96FC899CDCD8BB0420 /* [CP] Check Pods Manifest.lock */,
+				B6BF62332AFB53570045059B /* Sources */,
+				B6BF62342AFB53570045059B /* Frameworks */,
+				B6BF62352AFB53570045059B /* Resources */,
+				5FB699A934384DF4DB499BF3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire Kingfisher";
+			productName = "Alamofire Kingfisher";
+			productReference = B6BF62372AFB53570045059B /* Alamofire Kingfisher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6BF622F2AFB53570045059B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B6BF62362AFB53570045059B = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B6BF62322AFB53570045059B /* Build configuration list for PBXProject "Alamofire Kingfisher" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6BF622E2AFB53570045059B;
+			productRefGroup = B6BF62382AFB53570045059B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6BF62362AFB53570045059B /* Alamofire Kingfisher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6BF62352AFB53570045059B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60C43362AFEDF1D003423BD /* PhotoDetail.storyboard in Resources */,
+				B6BF62512AFB566B0045059B /* PhotosTableViewCell.xib in Resources */,
+				B6BF62472AFB535A0045059B /* LaunchScreen.storyboard in Resources */,
+				B6BF62442AFB535A0045059B /* Assets.xcassets in Resources */,
+				B6BF62422AFB53570045059B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09551F96FC899CDCD8BB0420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alamofire Kingfisher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FB699A934384DF4DB499BF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alamofire Kingfisher/Pods-Alamofire Kingfisher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alamofire Kingfisher/Pods-Alamofire Kingfisher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alamofire Kingfisher/Pods-Alamofire Kingfisher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6BF62332AFB53570045059B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BF62502AFB566B0045059B /* PhotosTableViewCell.swift in Sources */,
+				B6BF623F2AFB53570045059B /* ViewController.swift in Sources */,
+				B6BF62552AFB5F6B0045059B /* UIImageViewExtension.swift in Sources */,
+				B60C43342AFEDF13003423BD /* PhotoDetailViewController.swift in Sources */,
+				B6BF623B2AFB53570045059B /* AppDelegate.swift in Sources */,
+				B6BF623D2AFB53570045059B /* SceneDelegate.swift in Sources */,
+				B6BF62532AFB5A2F0045059B /* Photo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6BF62402AFB53570045059B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6BF62412AFB53570045059B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6BF62452AFB535A0045059B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6BF62462AFB535A0045059B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6BF62492AFB535A0045059B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6BF624A2AFB535A0045059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6BF624C2AFB535A0045059B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B7A862B79D920538B6B780 /* Pods-Alamofire Kingfisher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N64875GLV;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alamofire Kingfisher/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.syndicate017.Alamofire-Kingfisher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6BF624D2AFB535A0045059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D2FD52A296CA584BF195D4 /* Pods-Alamofire Kingfisher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N64875GLV;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alamofire Kingfisher/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.syndicate017.Alamofire-Kingfisher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6BF62322AFB53570045059B /* Build configuration list for PBXProject "Alamofire Kingfisher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6BF62492AFB535A0045059B /* Debug */,
+				B6BF624A2AFB535A0045059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6BF624B2AFB535A0045059B /* Build configuration list for PBXNativeTarget "Alamofire Kingfisher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6BF624C2AFB535A0045059B /* Debug */,
+				B6BF624D2AFB535A0045059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6BF622F2AFB53570045059B /* Project object */;
+}
